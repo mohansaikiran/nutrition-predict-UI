@@ -1,0 +1,25 @@
+<div class="outer-container">
+    <div class="img-container">
+        <img src="/assets/assayLogo.svg" alt="logo" style="height: 150px; width: 150px;">
+    </div>
+    <div class="inner-container">
+        <h2>Welcome Admin</h2>
+        <p>The Leaf of your plant can speak about it's health. Nutritional Deficiences if present can be detected based on the characteristic of the leaf. Take a quick scan of the leaf and know how healthy your plant is </p>
+    </div>
+    <div class="bottom-container">
+        <h3>Click on the Camera Icon Below</h3>
+        <div class="icon-bar">
+            <div>
+                <mat-icon style="font-size: 50px; cursor: pointer;" (click)="openCam = true">camera_alt</mat-icon><br>
+                <span style="margin-left: 25px; color: blue;">Camera</span>
+            </div>
+            <div>
+                <mat-icon style="font-size: 50px; cursor: pointer;" (click)="logout()">person</mat-icon><br>
+                <span style="margin-left: 25px; color: blue;">Log Out</span>
+            </div>
+        </div>
+        <div class="file-upload">
+            <input type="file" accept="image/*" capture="environment" *ngIf="openCam == true" (change)="loadFile($event)" style="font-size: 15px;">
+        </div>
+    </div>
+</div>

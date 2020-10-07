@@ -1,0 +1,43 @@
+.outer-container{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: inherit;
+    /* background-image: url("/assets/login.jpg"); 
+    background-repeat: repeat;
+    background-size: 375px 812px; */
+}
+.img-container {
+    text-align: center;
+}
+.inner-container {
+    border: 0.5mm solid black;
+    background-color: hsl(139deg 48% 49%);
+    padding: 15px;
+    font-size: larger;
+}
+h2{
+    text-align: center;
+}
+.bottom-container{
+    margin-top: 50px;
+    text-align: center;
+}
+h3{
+    animation: blinker 2s linear infinite;
+}
+@keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
+.icon-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 70px;
+}
+.file-upload {
+    margin-top: 30px;
+    text-align: center;
+}
